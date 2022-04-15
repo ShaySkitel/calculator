@@ -32,18 +32,21 @@ function operate(operator, num1, num2) {
     }
 }
 
-function displayPressedButtons(e) {
-    const value = e.target.textContent;
-    if (value !== "C" && value !== "=") {
-        if (Number(value)) {
-
-        }
-        display.textContent += value;
-    }
+// Clear and reset everything
+function clear() {
+    display.textContent = "";
+    num1 = "";
+    num2 = "";
+    operator = "";
 }
+
+
 
 const display = document.querySelector("main #info");
 const allBtns = document.querySelectorAll("button");
+let operator;
+let num1 = "";
+let num2 = "";
 
 for (const btn of allBtns) {
     btn.addEventListener("click", displayPressedButtons);
