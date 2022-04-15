@@ -31,3 +31,20 @@ function operate(operator, num1, num2) {
             return divide(num1, num2);
     }
 }
+
+function displayPressedButtons(e) {
+    const value = e.target.textContent;
+    if (value !== "C" && value !== "=") {
+        if (Number(value)) {
+
+        }
+        display.textContent += value;
+    }
+}
+
+const display = document.querySelector("main #info");
+const allBtns = document.querySelectorAll("button");
+
+for (const btn of allBtns) {
+    btn.addEventListener("click", displayPressedButtons);
+}
