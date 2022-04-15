@@ -23,8 +23,8 @@ main button {
     justify-content: center;
     align-items: center;
     font-size: 2.5rem;
-    width: calc(250px / 3);
-    height: calc(250px / 3);
+    width: calc(250px / 4);
+    height: calc(250px / 4);
 }
 
 main #keys {
