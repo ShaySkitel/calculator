@@ -39,6 +39,6 @@ main #keys button:last-of-type {
 main #info {
     text-align: right;
     margin-bottom: 1rem;
-    min-height: 18px;
+    min-height: 27px;
     font-size: 1.5rem;
 }
