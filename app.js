@@ -58,7 +58,7 @@ function calculateAndDisplay(value) {
 
 // Display the user's button presses
 function displayPressedButtons(e) {
-    const value = e.target.textContent;
+    const value = e.target.textContent === "X" ? "*" : e.target.textContent;
 
     // If the user didn't choose to clear or calculate
     if (value !== "C" && value !== "=") {
