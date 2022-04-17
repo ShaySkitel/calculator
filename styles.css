@@ -177,8 +177,12 @@ main button.funcbtn {
 
 main #keys {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+main #keys .row {
+    display: flex;
 }
 
 main #keys button:last-of-type {
