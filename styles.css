@@ -163,7 +163,10 @@ main button {
     border: none;
     background: none;
     color: black;
+    flex-shrink: 1;
     flex-grow: 1;
+    margin: 0;
+    padding: 0;
 }
 
 main button:active,
@@ -196,4 +199,10 @@ main #info {
     min-height: 27px;
     font-size: 1.5rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 500px) {
+    main button {
+        font-size: 2rem;
+    }
 }
